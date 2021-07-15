@@ -1,0 +1,28 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "A ReadMe generator to use in future projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julioPlaceres/ReadMe_generator.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "github",
+    "readme"
+  ],
+  "author": "Julio Placeres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julioPlaceres/ReadMe_generator/issues"
+  },
+  "homepage": "https://github.com/julioPlaceres/ReadMe_generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}

@@ -27,7 +27,7 @@ function getUserInput() {
         {
             name: "title",
             type: "input",
-            message: "What is the project title?"
+            message: "What is this project title?"
         },
         {
             name: "description",
@@ -37,12 +37,12 @@ function getUserInput() {
         {
             name: "userName",
             type: "input",
-            message: "What is your github user Name?"
+            message: "What is your github user user name?"
         },
         {
             name: "email",
             type: "input",
-            message: "What is your email?"
+            message: "To which email should people contact you?"
         },
         {
             name: "installation",

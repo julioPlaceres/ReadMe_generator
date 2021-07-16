@@ -1,6 +1,8 @@
 // Required modules
 const fs = require("fs");
 const inquirer = require("inquirer");
+const util = require("util");
+const path = require("path");
 
 // Get user inputs using inquirer
 const getUserInput = () => {
@@ -44,4 +46,58 @@ const getUserInput = () => {
     ])
 }
 
-getUserInput();
+function createMdFile(response) {
+    // Switch Statement to get the badges from page source
+    let badge;
+    switch (response.license) {
+        case "none":
+            badge = ""
+            break;
+
+        case "MIT":
+            badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]"
+            break;
+
+        case "GPL 3.0":
+            badge = "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)"
+            break;
+
+        case "APACHE":
+            badge = "![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)"
+            break;
+    }
+
+    return `
+    # ${response.title}
+
+    ## Add badge later
+
+    ${response.description}
+
+    ### Table of contents:
+    * [How to Install](#installation)
+    * [How to use it](#usage)
+
+
+
+
+    `
+
+}
+
+getUserInput()
+
+.then(function(response){
+    let outputFile = createMdFile(response);
+    return writetoFile(path.join(process.cwd(), "readMe"), outputFile);
+})
+
+.then(function () {
+    console.log("Sucess...");
+})
+
+.catch(function (error){
+    console.log(error);
+})
+
+const writetoFile = util.promisify(fs.writeFile);

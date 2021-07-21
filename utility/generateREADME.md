@@ -1,5 +1,5 @@
-# Readme File Generator  
-A node Js application that will take user inputs and will generate a readme file for the specified project.
+# Web developer Portafolio  
+Feel free to check some of my work, some of the projects displayed are: Tasty bytes, Work Scheduler, Team Assembly, Weather Dashboard and ReadMe Generator. Also, my contact information as well as my resume can be found towards the bottom of the page
 ## Table of Contents:
 * [Installation](#installation)
 * [Usage](#usage)
@@ -9,17 +9,17 @@ A node Js application that will take user inputs and will generate a readme file
 * [Questions](#questions)
 ### Installation:
 To install dependencies, run the following:
-```npm i inquirer```
+```n/a```
 ### Usage:
-download inquirer dependencies and run with node js
+Navigate to the link provided to see the portafolio page.
 ### License:
 This project is licensed under:
 none
 ### Contributing:
-Please fork, add your suggestions and create a well descriptive pull request.
+n/a
 ### Tests:
 To run the test enter the following:
-```run test```
+```n/a```
 ### Questions:
 If you have any questions contact me at [GitHub](https://github.com/julioPlaceres) or contact me at jplaceresvaldes@outlook.com
     
